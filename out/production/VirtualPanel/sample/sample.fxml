@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import eu.hansolo.medusa.Gauge?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Polygon?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="800.0">
+         <children>
+             <Polygon fill="#090909" layoutX="108.0" layoutY="121.0" points="525.9752807617188, -120.99998474121094, 74.8011474609375, -120.99998474121094, -54.04627227783203, -35.699989318847656, -108.00001525878906, 120.30000305175781, -62.02472686767578, 277.1000061035156, 74.80116271972656, 379.00006103515625, 525.9752807617188, 379.00006103515625, 647.56640625, 284.3000183105469, 696.0, 130.99998474121094, 647.5663452148438, -35.69999694824219" stroke="#9c0505" strokeType="OUTSIDE" strokeWidth="5.0" />
+            <Gauge angleRange="300.0" animated="true" unitColor="silver" titleColor="silver" valueColor="silver" majorTickMarkColor="silver" tickLabelColor="silver" barBorderColor="silver" barBackgroundColor="silver" barColor="silver" needleBorderColor="silver" backgroundPaint="#0e0e0e00" borderPaint="#87676700" borderWidth="0.0" decimals="0" foregroundPaint="#faf1f100" layoutX="532.0" layoutY="309.0" lcdDesign="GRAY" lcdFont="DIGITAL" majorTickMarkType="PILL" majorTickMarkWidthFactor="1.0" maxMeasuredValue="200.0" maxValue="200.0" mediumTickMarkLengthFactor="0.25" mediumTickMarkType="PILL" prefHeight="162.0" prefWidth="174.0" startAngle="340.0" tickLabelOrientation="ORTHOGONAL" tickMarkRingVisible="true" unit="Km / h" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
