@@ -2,5 +2,6 @@ module KcK {
     requires javafx.controls;
     requires javafx.graphics;
     requires javafx.fxml;
-	opens sample;
+    requires eu.hansolo.medusa;
+    opens sample;
 }
