@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" xmlns="http://javafx.com/javafx"
+      maxHeight="20"
+      maxWidth="20"
+      style="-fx-background-color: #A0A0A0;"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="sample.Controller">
+
+    <children>
+        <Text fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="Panel nawigacji ?">
+            <Font size="15.0"/>
+        </Text>
+    </children>
+
+</VBox>
