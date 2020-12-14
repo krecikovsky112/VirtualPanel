@@ -8,6 +8,9 @@ import javafx.scene.Parent;
 import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
+
 
 import java.io.IOException;
 
@@ -76,6 +79,9 @@ public class Controller {
         tachoValue = 1;
         tachometer.setValue(tachoValue);
         flag_engine = 1;
+        Media media = new Media("file:///F:/Semestr5/Java/VirtualPanel/src/sample/engine_sound.mp3");
+        MediaPlayer mediaPlayer=new MediaPlayer(media);
+        mediaPlayer.setAutoPlay(true);
     }
 
     @FXML

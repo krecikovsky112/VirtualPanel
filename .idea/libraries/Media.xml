@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Media">
+    <CLASSES>
+      <root url="file://C:/Program Files/JetBrains/Media" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://C:/Program Files/JetBrains/Media" recursive="false" />
+  </library>
+</component>

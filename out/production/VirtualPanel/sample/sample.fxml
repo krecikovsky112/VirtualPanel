@@ -10,61 +10,31 @@
 <?import javafx.scene.shape.Polygon?>
 <?import javafx.scene.text.Font?>
 
-<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1"
-          xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
     <columnConstraints>
-        <ColumnConstraints/>
+        <ColumnConstraints />
     </columnConstraints>
     <rowConstraints>
-        <RowConstraints/>
+        <RowConstraints />
     </rowConstraints>
     <children>
         <AnchorPane prefHeight="600.0" prefWidth="800.0">
             <children>
-                <Polygon fill="#090909" layoutX="111.0" layoutY="127.0"
-                         points="525.9752807617188, -120.99998474121094, 74.8011474609375, -120.99998474121094, -54.04627227783203, -35.699989318847656, -111.00000762939453, 118.0, -62.02472686767578, 277.1000061035156, 74.80116271972656, 379.00006103515625, 525.9752807617188, 379.00006103515625, 647.56640625, 284.3000183105469, 696.0, 130.99998474121094, 647.5663452148438, -35.69999694824219"
-                         stroke="#9c0505" strokeType="OUTSIDE" strokeWidth="5.0"/>
-                <Gauge fx:id="Speedometer" angleRange="300.0" animated="true" backgroundPaint="#0e0e0e00"
-                       barBackgroundColor="silver" barBorderColor="silver" barColor="silver" borderPaint="#87676700"
-                       borderWidth="0.0" decimals="0" foregroundPaint="#faf1f100" knobType="PLAIN" layoutX="507.0"
-                       layoutY="250.0" lcdDesign="GRAY" lcdFont="STANDARD" ledType="FLAT" majorTickMarkColor="silver"
-                       majorTickMarkType="PILL" majorTickMarkWidthFactor="1.0" maxMeasuredValue="200.0"
-                       maxMeasuredValueVisible="true" maxValue="200.0" mediumTickMarkColor="darkslategray"
-                       mediumTickMarkLengthFactor="0.25" mediumTickMarkType="PILL" needleBorderColor="silver"
-                       needleColor="silver" prefHeight="230.0" prefWidth="230.0" startAngle="340.0"
-                       thresholdColor="silver" tickLabelColor="silver" tickLabelOrientation="ORTHOGONAL"
-                       tickMarkColor="silver" tickMarkRingVisible="true" titleColor="silver" unit="Km / h"
-                       unitColor="silver" valueColor="silver"/>
-                <Gauge fx:id="tachometer" angleRange="270.0" animated="true" backgroundPaint="#0e0e0e00"
-                       barBackgroundColor="silver" barBorderColor="silver" barColor="silver" borderPaint="#87676700"
-                       borderWidth="0.0" foregroundPaint="#faf1f100" knobType="PLAIN" layoutX="77.0" layoutY="256.0"
-                       lcdDesign="GRAY" lcdFont="DIGITAL" majorTickMarkColor="silver" majorTickMarkType="PILL"
-                       majorTickMarkWidthFactor="1.0" majorTickSpace="5.0" maxValue="8.0"
-                       mediumTickMarkColor="darkslategray" mediumTickMarkLengthFactor="0.25" mediumTickMarkType="PILL"
-                       needleBorderColor="silver" needleColor="silver" prefHeight="230.0" prefWidth="230.0"
-                       thresholdColor="silver" tickLabelColor="silver" tickLabelOrientation="ORTHOGONAL"
-                       tickMarkColor="silver" tickMarkRingVisible="true" titleColor="silver" unit="1/min x 1000"
-                       unitColor="silver" valueColor="silver"/>
-                <Button fx:id="Gas" layoutX="622.0" layoutY="539.0" mnemonicParsing="false" onAction="#onPressed"
-                        text="Pedał gazu"/>
-                <Button fx:id="left" layoutX="150.0" layoutY="542.0" mnemonicParsing="false" onAction="#left_navigation"
-                        text="&lt;"/>
-                <Button fx:id="right" layoutX="180.0" layoutY="542.0" mnemonicParsing="false"
-                        onAction="#right_navigation" text="&gt;"/>
-                <BorderPane fx:id="comp_bg" layoutX="307.0" layoutY="34.0" prefHeight="250.0" prefWidth="200.0"
-                            style="-fx-background-color: #A0A0A0;">
+                <Polygon fill="#090909" layoutX="111.0" layoutY="127.0" points="525.9752807617188, -120.99998474121094, 74.8011474609375, -120.99998474121094, -54.04627227783203, -35.699989318847656, -111.00000762939453, 118.0, -62.02472686767578, 277.1000061035156, 74.80116271972656, 379.00006103515625, 525.9752807617188, 379.00006103515625, 647.56640625, 284.3000183105469, 696.0, 130.99998474121094, 647.5663452148438, -35.69999694824219" stroke="#9c0505" strokeType="OUTSIDE" strokeWidth="5.0" />
+                <Gauge fx:id="Speedometer" angleRange="300.0" animated="true" backgroundPaint="#0e0e0e00" barBackgroundColor="silver" barBorderColor="silver" barColor="silver" borderPaint="#87676700" borderWidth="0.0" decimals="0" foregroundPaint="#faf1f100" knobType="PLAIN" layoutX="507.0" layoutY="250.0" lcdDesign="GRAY" lcdFont="STANDARD" ledType="FLAT" majorTickMarkColor="silver" majorTickMarkType="PILL" majorTickMarkWidthFactor="1.0" maxMeasuredValue="200.0" maxMeasuredValueVisible="true" maxValue="200.0" mediumTickMarkColor="darkslategray" mediumTickMarkLengthFactor="0.25" mediumTickMarkType="PILL" needleBorderColor="silver" needleColor="silver" prefHeight="230.0" prefWidth="230.0" startAngle="340.0" thresholdColor="silver" tickLabelColor="silver" tickLabelOrientation="ORTHOGONAL" tickMarkColor="silver" tickMarkRingVisible="true" titleColor="silver" unit="Km / h" unitColor="silver" valueColor="silver" />
+                <Gauge fx:id="tachometer" angleRange="270.0" animated="true" backgroundPaint="#0e0e0e00" barBackgroundColor="silver" barBorderColor="silver" barColor="silver" borderPaint="#87676700" borderWidth="0.0" foregroundPaint="#faf1f100" knobType="PLAIN" layoutX="77.0" layoutY="256.0" lcdDesign="GRAY" lcdFont="DIGITAL" majorTickMarkColor="silver" majorTickMarkType="PILL" majorTickMarkWidthFactor="1.0" majorTickSpace="5.0" maxValue="8.0" mediumTickMarkColor="darkslategray" mediumTickMarkLengthFactor="0.25" mediumTickMarkType="PILL" needleBorderColor="silver" needleColor="silver" prefHeight="230.0" prefWidth="230.0" thresholdColor="silver" tickLabelColor="silver" tickLabelOrientation="ORTHOGONAL" tickMarkColor="silver" tickMarkRingVisible="true" titleColor="silver" unit="1/min x 1000" unitColor="silver" valueColor="silver" />
+                <Button fx:id="Gas" layoutX="622.0" layoutY="539.0" mnemonicParsing="false" onAction="#onPressed" text="Pedał gazu" />
+                <Button fx:id="left" layoutX="150.0" layoutY="542.0" mnemonicParsing="false" onAction="#left_navigation" text="&lt;" />
+                <Button fx:id="right" layoutX="180.0" layoutY="542.0" mnemonicParsing="false" onAction="#right_navigation" text="&gt;" />
+                <BorderPane fx:id="comp_bg" layoutX="307.0" layoutY="34.0" prefHeight="250.0" prefWidth="200.0" style="-fx-background-color: #A0A0A0;">
                     <center>
-                        <AnchorPane fx:id="comp_display" prefHeight="250.0" prefWidth="200.0"
-                                    style="-fx-background-color: #A0A0A0;" BorderPane.alignment="CENTER"/>
+                        <AnchorPane fx:id="comp_display" prefHeight="250.0" prefWidth="200.0" style="-fx-background-color: #A0A0A0;" BorderPane.alignment="CENTER" />
                     </center>
                 </BorderPane>
-                <Button fx:id="Brake" layoutX="514.0" layoutY="539.0" mnemonicParsing="false" onAction="#onRelease"
-                        text="Pedał hamulca"/>
-                <Button fx:id="start" layoutX="712.0" layoutY="516.0" maxHeight="26.0" maxWidth="27.0"
-                        mnemonicParsing="false" onAction="#startEngine" prefHeight="26.0" prefWidth="27.0"
-                        styleClass="start-button" stylesheets="@myCss.css" text="Start" textFill="#cfaeae">
+                <Button fx:id="Brake" layoutX="514.0" layoutY="539.0" mnemonicParsing="false" onAction="#onRelease" text="Pedał hamulca" />
+                <Button fx:id="start" layoutX="712.0" layoutY="516.0" maxHeight="26.0" maxWidth="27.0" mnemonicParsing="false" onAction="#startEngine" prefHeight="26.0" prefWidth="27.0" styleClass="start-button" stylesheets="@myCss.css" text="Start" textFill="#cfaeae">
                     <font>
-                        <Font name="System Bold" size="12.0"/>
+                        <Font name="System Bold" size="12.0" />
                     </font>
                 </Button>
             </children>

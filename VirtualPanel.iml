@@ -11,5 +11,15 @@
     <orderEntry type="library" name="JavaFX" level="application" />
     <orderEntry type="library" name="lib" level="project" />
     <orderEntry type="library" name="Medusa" level="project" />
+    <orderEntry type="library" name="Media" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Program Files/JetBrains/Media/javafx-media-16-ea+5.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>
