@@ -28,36 +28,54 @@ public class Controller {
     @FXML
     private AnchorPane comp_display;
 
-    int speedValue=0;
-    int tachoValue=0;
+    int speedValue = 0, flag_engine = 0;
+    double tachoValue = 0;
+
     @FXML
     void onPressed(ActionEvent event) throws InterruptedException {
-        Speedometer.setAnimated(true);
-        speedValue+=15;
-        if(speedValue>=200)
-        {
-            speedValue=195;
+        if (flag_engine == 1) {
+            Speedometer.setAnimated(true);
+            speedValue += 15;
+            if (speedValue >= 200) {
+                speedValue = 195;
+            }
+            Speedometer.setValue(speedValue);
+            tachometer.setAnimated(true);
+            if (tachoValue >= 6) {
+                tachoValue = 1;
+            }
+            tachoValue += 2.5;
+            if (speedValue == 195) {
+                tachoValue = 8;
+            }
+            tachometer.setValue(tachoValue);
         }
-        Speedometer.setValue(speedValue);
-        tachometer.setAnimated(true);
-        if(tachoValue==8)
-        {
-            tachoValue=0;
-        }
-            tachoValue += 4;
-        if(speedValue==195)
-        {
-            tachoValue=8;
-        }
-        tachometer.setValue(tachoValue);
     }
 
     @FXML
-    void onRelease(ActionEvent event)
-    {
-        Speedometer.setAnimated(true);
-        speedValue-=25;
-        Speedometer.setValue(speedValue);
+    void onRelease(ActionEvent event) {
+        if (flag_engine == 1) {
+            Speedometer.setAnimated(true);
+            speedValue -= 25;
+            if (speedValue < 0) {
+                speedValue = 0;
+            }
+            Speedometer.setValue(speedValue);
+            tachometer.setAnimated(true);
+            tachoValue = -3;
+            if (tachoValue < 0) {
+                tachoValue = 1;
+            }
+            tachometer.setValue(tachoValue);
+        }
+    }
+
+    @FXML
+    void startEngine() {
+        tachometer.setAnimated(true);
+        tachoValue = 1;
+        tachometer.setValue(tachoValue);
+        flag_engine = 1;
     }
 
     @FXML
@@ -73,7 +91,7 @@ public class Controller {
     private void loadPage(String page) throws IOException {
         Parent root = null;
 
-        root = FXMLLoader.load(getClass().getResource(page+".fxml"));
+        root = FXMLLoader.load(getClass().getResource(page + ".fxml"));
         comp_bg.setCenter(root);
     }
 }

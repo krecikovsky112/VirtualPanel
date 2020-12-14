@@ -1,0 +1,9 @@
+.start-button
+{
+    -fx-background-radius: 5em ;
+    -fx-min-width: 70px;
+    -fx-min-height: 70px;
+    -fx-max-width: 70px;
+    -fx-max-height: 70px;
+    -fx-background-color: black;
+}
