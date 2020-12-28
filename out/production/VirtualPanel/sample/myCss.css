@@ -7,3 +7,21 @@
     -fx-max-height: 70px;
     -fx-background-color: black;
 }
+
+.comp_display
+{
+    /*-fx-background-color: linear-gradient(to bottom, #737373, #404040);*/
+    -fx-background-color: #090909;
+    -fx-border-color: #9C0505;
+}
+
+.page1_upbar
+{
+    -fx-background-color: linear-gradient(to top, #737373, #404040);
+}
+
+.page_screen
+{
+    -fx-background-color: #000000;
+}
+
