@@ -25,3 +25,8 @@
     -fx-background-color: #000000;
 }
 
+.button_emergency
+{
+    -fx-background-image: url('images/emergencylights.png');
+}
+
