@@ -6,7 +6,11 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
+import javafx.geometry.Pos;
+import javafx.scene.Node;
 import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
@@ -15,16 +19,21 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
 import javafx.scene.text.Text;
+import javafx.stage.Stage;
 
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 
-public class Controller {
+public class Controller implements Initializable {
 
     @FXML
     private Gauge Speedometer;
@@ -36,24 +45,19 @@ public class Controller {
     private Button Gas;
 
     @FXML
-    private BorderPane comp_bg;
+    private BorderPane computerBG;
 
-//    @FXML
-//    private Label kmh;
-//
-//    @FXML
-//    public void initialize(){
-//        kmh.setText("15km/h");
-//    }
-//    page1Controller page1controller = new page1Controller();
-
-
-    int speedValue = 0, flag_engine = 0;
+    int speedValue = 0;
+    int flag_engine = 0;
     double tachoValue = 0;
-    int status = 0;
+    int status = -1;
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+    }
 
     @FXML
-    void onPressed(ActionEvent event) throws InterruptedException {
+    void onPressed(ActionEvent event) throws InterruptedException, IOException {
         if (flag_engine == 1) {
             Speedometer.setAnimated(true);
             speedValue += 15;
@@ -70,6 +74,10 @@ public class Controller {
                 tachoValue = 8;
             }
             tachometer.setValue(tachoValue);
+            if(getStatus() == 1){
+                //setStatus(1);
+                loadPage("page1");
+            }
         }
     }
 
@@ -93,54 +101,64 @@ public class Controller {
 
     @FXML
     void startEngine() throws IOException {
-        loadPage("fxmls/page1");
         setStatus(1);
+        loadPage("page");
         tachometer.setAnimated(true);
         tachoValue = 1;
         tachometer.setValue(tachoValue);
         flag_engine = 1;
-        //Media media = new Media("file:///F:/Semestr5/Java/VirtualPanel/src/sample/engine_sound.mp3");
-        //MediaPlayer mediaPlayer=new MediaPlayer(media);
-        //mediaPlayer.setAutoPlay(true);
+//    Media media =
+//        new Media(
+//            "file:///sample/engine_sound.mp3");
+//        MediaPlayer mediaPlayer=new MediaPlayer(media);
+//        mediaPlayer.setAutoPlay(true);
     }
 
     @FXML
-    void right_navigation(ActionEvent event) throws IOException {
-        if(getStatus() == 1) {
-            loadPage("fxmls/page2");
+    void rightNavigation(ActionEvent event) throws IOException {
+        if(getStatus() == 0 || getStatus() == 1) {
             setStatus(2);
+            loadPage("page2");
         } else if(getStatus() == 2){
-            loadPage("fxmls/page3");
             setStatus(3);
+            loadPage("page3");
         } else if(getStatus() == 3){
-            loadPage("fxmls/page4");
             setStatus(4);
+            loadPage("page4");
         } else if(getStatus() == 4){
-            loadPage("fxmls/page1");
             setStatus(1);
+            if(speedValue > 0){
+                loadPage("page1");
+            } else {
+                loadPage("page");
+            }
         }
     }
 
     @FXML
-    void left_navigation(ActionEvent event) throws IOException {
+    void leftNavigation(ActionEvent event) throws IOException {
         if(getStatus() == 4){
-            loadPage("fxmls/page3");
             setStatus(3);
+            loadPage("page3");
         } else if(getStatus() == 3) {
-            loadPage("fxmls/page2");
             setStatus(2);
+            loadPage("page2");
         } else if(getStatus() == 2){
-            loadPage("fxmls/page1");
             setStatus(1);
-        } else if(getStatus() == 1){
-            loadPage("fxmls/page4");
+            if(speedValue > 0){
+                loadPage("page1");
+            } else {
+                loadPage("page");
+            }
+        } else if(getStatus() == 1 || getStatus() == 0){
             setStatus(4);
+            loadPage("page4");
         }
     }
 
-    private void loadPage(String page) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource(page + ".fxml"));
-        comp_bg.setCenter(root);
+    public void loadPage(String page) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource( "fxmls/" + page + ".fxml"));
+        computerBG.setCenter(root);
     }
 
     private void setStatus(int status){
@@ -150,4 +168,5 @@ public class Controller {
     private int getStatus(){
         return status;
     }
+
 }

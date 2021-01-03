@@ -17,7 +17,7 @@
 
 .page1_upbar
 {
-    -fx-background-color: linear-gradient(to top, #737373, #404040);
+    -fx-background-color: linear-gradient(to top, #404040, #202020);
 }
 
 .page_screen
@@ -25,3 +25,43 @@
     -fx-background-color: #000000;
 }
 
+.time_temp
+{
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14;
+    -fx-font-family: Bahnschrift;
+}
+
+.info_numbers{
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 15;
+}
+
+.info_type
+{
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 12;
+}
+
+.menu_names
+{
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14;
+    -fx-font-family: Bahnschrift;
+}
+
+.computer_nav {
+    -fx-background-color: #404040;
+    -fx-border-radius: 15px;
+    -fx-color: #ffffff;
+    -fx-font-family: Arial;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-padding: 5px 8px;
+    -fx-text-decoration: none;
+    -fx-text-fill: white;
+}
