@@ -9,19 +9,12 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.fxml.Initializable;
-import javafx.geometry.Pos;
-import javafx.scene.Node;
 import javafx.scene.Parent;
-<<<<<<< HEAD
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextArea;
-=======
 import javafx.scene.control.*;
->>>>>>> 32bdd704077c18eb5a893fdf2d89ebfd35eabd8b
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
@@ -29,11 +22,7 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.scene.text.Text;
-<<<<<<< HEAD
-import javafx.stage.Stage;
-=======
 import javafx.util.Duration;
->>>>>>> 32bdd704077c18eb5a893fdf2d89ebfd35eabd8b
 
 
 import java.io.File;
@@ -44,7 +33,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 
-public class Controller implements Initializable {
+public class Controller {
 
     @FXML
     private Gauge Speedometer;
@@ -56,12 +45,6 @@ public class Controller implements Initializable {
     private Button Gas;
 
     @FXML
-<<<<<<< HEAD
-    private BorderPane computerBG;
-
-    int speedValue = 0;
-    int flag_engine = 0;
-=======
     private ImageView leftSignalImage;
 
     @FXML
@@ -69,9 +52,6 @@ public class Controller implements Initializable {
 
     @FXML
     private Button leftSignal;
-
-    @FXML
-    private BorderPane comp_bg;
 
     @FXML
     private ImageView check_engine;
@@ -109,29 +89,12 @@ public class Controller implements Initializable {
     @FXML
     private Timeline loop4;
 
-
-
-
-
-
-//    @FXML
-//    private Label kmh;
-//
-//    @FXML
-//    public void initialize(){
-//        kmh.setText("15km/h");
-//    }
-//    page1Controller page1controller = new page1Controller();
-
+    @FXML
+    private BorderPane computerBG;
 
     int speedValue = 0, flag_engine = 0;
->>>>>>> 32bdd704077c18eb5a893fdf2d89ebfd35eabd8b
     double tachoValue = 0;
     int status = -1;
-
-    @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) {
-    }
 
     @FXML
     void onPressed(ActionEvent event) throws InterruptedException, IOException {
@@ -142,7 +105,6 @@ public class Controller implements Initializable {
                 speedValue = 195;
             }
             Speedometer.setValue(speedValue);
-//            display_speed.setText(speedValue+" Km/h");
             tachometer.setAnimated(true);
             if (tachoValue >= 6) {
                 tachoValue = 1;
@@ -199,33 +161,18 @@ public class Controller implements Initializable {
         abs.setVisible(false);
     }
     @FXML
-<<<<<<< HEAD
-    void startEngine() throws IOException {
+    void startEngine() throws IOException, InterruptedException {
         setStatus(1);
         loadPage("page");
-=======
-    void startEngine() throws IOException, InterruptedException {
-        loadPage("fxmls/page1");
-        setStatus(1);
-//        display_speed.setText("0 Km/h");
->>>>>>> 32bdd704077c18eb5a893fdf2d89ebfd35eabd8b
         tachometer.setAnimated(true);
         tachoValue = 1;
         tachometer.setValue(tachoValue);
         flag_engine = 1;
-<<<<<<< HEAD
-//    Media media =
-//        new Media(
-//            "file:///sample/engine_sound.mp3");
-//        MediaPlayer mediaPlayer=new MediaPlayer(media);
-//        mediaPlayer.setAutoPlay(true);
-=======
-        Media media = new Media("file:///F:/Semestr5/Java/VirtualPanel/src/sample/engine_sound.mp3");
-        MediaPlayer mediaPlayer=new MediaPlayer(media);
-        mediaPlayer.setAutoPlay(true);
+//      Media media = new Media("file:///F:/Semestr5/Java/VirtualPanel/src/sample/engine_sound.mp3");
+//      MediaPlayer mediaPlayer=new MediaPlayer(media);
+//      mediaPlayer.setAutoPlay(true);
         setVisible();
         new Timeline(new KeyFrame(Duration.millis(4000),actionEvent -> setInvisible())).play();
->>>>>>> 32bdd704077c18eb5a893fdf2d89ebfd35eabd8b
     }
 
     @FXML
@@ -270,16 +217,12 @@ public class Controller implements Initializable {
         }
     }
 
-<<<<<<< HEAD
-    public void loadPage(String page) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource( "fxmls/" + page + ".fxml"));
-        computerBG.setCenter(root);
-=======
     void setVisibleSignalLeft()
     {
         leftSignalImage.setVisible(true);
 
     }
+
     void blinkLeft()
     {
         leftSignalImage.setVisible(false);
@@ -341,16 +284,15 @@ public class Controller implements Initializable {
     @FXML
     void stopFlashing()
     {
-
         rightSignalImage.setVisible(false);
         leftSignalImage.setVisible(false);
         loop.stop();
         loop3.stop();
     }
+
     private void loadPage(String page) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource(page + ".fxml"));
-        comp_bg.setCenter(root);
->>>>>>> 32bdd704077c18eb5a893fdf2d89ebfd35eabd8b
+        Parent root = FXMLLoader.load(getClass().getResource("fxmls/" + page + ".fxml"));
+        computerBG.setCenter(root);
     }
 
     private void setStatus(int status){
@@ -360,9 +302,4 @@ public class Controller implements Initializable {
     private int getStatus(){
         return status;
     }
-
-<<<<<<< HEAD
-=======
-
->>>>>>> 32bdd704077c18eb5a893fdf2d89ebfd35eabd8b
 }

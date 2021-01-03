@@ -2,10 +2,7 @@
 
 <?import eu.hansolo.medusa.Gauge?>
 <?import javafx.scene.control.Button?>
-<<<<<<< HEAD
-=======
 <?import javafx.scene.image.Image?>
->>>>>>> 32bdd704077c18eb5a893fdf2d89ebfd35eabd8b
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
@@ -31,15 +28,9 @@
                 <Gauge fx:id="Speedometer" angleRange="300.0" animated="true" backgroundPaint="#0e0e0e00" barBackgroundColor="silver" barBorderColor="silver" barColor="silver" borderPaint="#87676700" borderWidth="0.0" decimals="0" foregroundPaint="#faf1f100" knobType="PLAIN" layoutX="514.0" layoutY="202.0" lcdDesign="GRAY" lcdFont="STANDARD" ledType="FLAT" majorTickMarkColor="silver" majorTickMarkType="PILL" majorTickMarkWidthFactor="1.0" maxMeasuredValue="200.0" maxMeasuredValueVisible="true" maxValue="200.0" mediumTickMarkColor="darkslategray" mediumTickMarkLengthFactor="0.25" mediumTickMarkType="PILL" needleBorderColor="silver" needleColor="silver" prefHeight="250.0" prefWidth="253.0" startAngle="340.0" thresholdColor="silver" tickLabelColor="silver" tickLabelOrientation="ORTHOGONAL" tickMarkColor="silver" tickMarkRingVisible="true" titleColor="silver" unit="Km / h" unitColor="silver" valueColor="silver" />
                 <Gauge fx:id="tachometer" angleRange="270.0" animated="true" backgroundPaint="#0e0e0e00" barBackgroundColor="silver" barBorderColor="silver" barColor="silver" borderPaint="#87676700" borderWidth="0.0" foregroundPaint="#faf1f100" knobType="PLAIN" layoutX="36.0" layoutY="202.0" lcdDesign="GRAY" lcdFont="DIGITAL" majorTickMarkColor="silver" majorTickMarkType="PILL" majorTickMarkWidthFactor="1.0" majorTickSpace="5.0" maxValue="8.0" mediumTickMarkColor="darkslategray" mediumTickMarkLengthFactor="0.25" mediumTickMarkType="PILL" needleBorderColor="silver" needleColor="silver" prefHeight="250.0" prefWidth="253.0" thresholdColor="silver" tickLabelColor="silver" tickLabelOrientation="ORTHOGONAL" tickMarkColor="silver" tickMarkRingVisible="true" titleColor="silver" unit="1/min x 1000" unitColor="silver" valueColor="silver" />
                 <Button fx:id="Gas" layoutX="622.0" layoutY="539.0" mnemonicParsing="false" onAction="#onPressed" text="Pedał gazu" />
-<<<<<<< HEAD
                 <Button fx:id="left" layoutX="150.0" layoutY="542.0" mnemonicParsing="false" onAction="#leftNavigation" styleClass="computer_nav" stylesheets="@../myCss.css" text="&lt;" />
                 <Button fx:id="right" layoutX="180.0" layoutY="542.0" mnemonicParsing="false" onAction="#rightNavigation" styleClass="computer_nav" stylesheets="@../myCss.css" text="&gt;" />
                 <BorderPane fx:id="computerBG" layoutX="310.0" layoutY="200.0" prefHeight="220.0" prefWidth="180.0" styleClass="comp_display" stylesheets="@../myCss.css"/>
-=======
-                <Button fx:id="left" layoutX="249.0" layoutY="542.0" mnemonicParsing="false" onAction="#left_navigation" text="&lt;" />
-                <Button fx:id="right" layoutX="277.0" layoutY="542.0" mnemonicParsing="false" onAction="#right_navigation" text="&gt;" />
-                <BorderPane fx:id="comp_bg" layoutX="310.0" layoutY="200.0" prefHeight="220.0" prefWidth="180.0" styleClass="comp_display" stylesheets="@../myCss.css" />
->>>>>>> 32bdd704077c18eb5a893fdf2d89ebfd35eabd8b
                 <Button fx:id="Brake" layoutX="514.0" layoutY="539.0" mnemonicParsing="false" onAction="#onRelease" text="Pedał hamulca" />
                 <Button fx:id="start" layoutX="712.0" layoutY="516.0" maxHeight="26.0" maxWidth="27.0" mnemonicParsing="false" onAction="#startEngine" prefHeight="26.0" prefWidth="27.0" styleClass="start-button" stylesheets="@../myCss.css" text="Start" textFill="#cfaeae">
                     <font>
