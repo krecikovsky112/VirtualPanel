@@ -6,9 +6,18 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
-    <orderEntry type="sourceFolder" forTests="false" />
+        <orderEntry type="sourceFolder" forTests="false" />
+        <orderEntry type="module-library">
+          <library>
+            <CLASSES>
+              <root url="jar://C:/Users/Mati/Desktop/Semestr 5/KCK/Laby/craPanel/javafx-media-16-ea+5.jar!/" />
+            </CLASSES>
+            <JAVADOC />
+            <SOURCES />
+          </library>
+    </orderEntry>
     <orderEntry type="library" name="JavaFX" level="application" />
-    <orderEntry type="library" name="media" level="application" />
     <orderEntry type="library" name="Medusa-11.5" level="application" />
+    <orderEntry type="library" name="javafx-media-16-ea+5" level="application" />
   </component>
 </module>
