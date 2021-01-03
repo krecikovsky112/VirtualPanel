@@ -19,26 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4aa3ea0a-be2f-4c14-b007-6e2bff8b6a83" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/description.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/google-java-format.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/google-java-format.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Medusa_11_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/javafx_media_16_ea_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VirtualPanel/sample/fxmls/page1.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VirtualPanel/sample/fxmls/page1.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VirtualPanel/sample/fxmls/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VirtualPanel/sample/fxmls/sample.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VirtualPanel/sample/images/emergencylights.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VirtualPanel/sample/images/emergencylights.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VirtualPanel/sample/images/kontrolka-kierunkowskazow.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VirtualPanel/sample/myCss.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VirtualPanel/sample/myCss.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/images/emergencylights.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/images/emergencylights.png" afterDir="false" />
-    </list>
+    <list default="true" id="4aa3ea0a-be2f-4c14-b007-6e2bff8b6a83" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -104,7 +85,7 @@
       <workItem from="1609637612973" duration="1354000" />
       <workItem from="1609673169031" duration="623000" />
       <workItem from="1609673939823" duration="13976000" />
-      <workItem from="1609697296657" duration="294000" />
+      <workItem from="1609697296657" duration="688000" />
     </task>
     <task id="LOCAL-00001" summary="Change display page and page1 fxml files in computerBG in Controller">
       <created>1609638930604</created>
@@ -134,7 +115,35 @@
       <option name="project" value="LOCAL" />
       <updated>1609697521118</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add new images for main scene Sample controls.">
+      <created>1609697626277</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1609697626277</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Change controller methods to run car computer, and handle signal buttons">
+      <created>1609697730734</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1609697730734</updated>
+    </task>
+    <task id="LOCAL-00007" summary="out commit">
+      <created>1609697761265</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1609697761265</updated>
+    </task>
+    <task id="LOCAL-00008" summary="out commit">
+      <created>1609697803615</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1609697803615</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,7 +166,10 @@
     <MESSAGE value="Add VirtualPanel.iml file again." />
     <MESSAGE value="Main scene Sample.fxml view changes." />
     <MESSAGE value="Set CSS style for main scene buttons." />
-    <option name="LAST_COMMIT_MESSAGE" value="Set CSS style for main scene buttons." />
+    <MESSAGE value="Add new images for main scene Sample controls." />
+    <MESSAGE value="Change controller methods to run car computer, and handle signal buttons" />
+    <MESSAGE value="out commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="out commit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="180" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1609638211844">
