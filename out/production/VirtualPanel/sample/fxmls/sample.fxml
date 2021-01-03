@@ -2,6 +2,10 @@
 
 <?import eu.hansolo.medusa.Gauge?>
 <?import javafx.scene.control.Button?>
+<<<<<<< HEAD
+=======
+<?import javafx.scene.image.Image?>
+>>>>>>> 32bdd704077c18eb5a893fdf2d89ebfd35eabd8b
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
@@ -23,6 +27,7 @@
     <children>
         <AnchorPane prefHeight="600.0" prefWidth="800.0">
             <children>
+<<<<<<< HEAD
                 <Polygon fill="#000000" layoutX="108.0" layoutY="127.0" points="502.0, 0.0, 74.8011474609375, 0.0, -62.02471923828125, 97.0, -95.0, 190.0, -62.02472686767578, 277.1000061035156, 74.80116271972656, 379.00006103515625, 525.9752807617188, 379.00006103515625, 647.56640625, 284.3000183105469, 678.0, 190.0, 647.56640625, 97.0" stroke="#9c0505" strokeType="OUTSIDE" strokeWidth="5.0" />
                 <Gauge fx:id="Speedometer" angleRange="300.0" animated="true" backgroundPaint="#0e0e0e00" barBackgroundColor="silver" barBorderColor="silver" barColor="silver" borderPaint="#87676700" borderWidth="0.0" decimals="0" foregroundPaint="#faf1f100" knobType="PLAIN" layoutX="514.0" layoutY="202.0" lcdDesign="GRAY" lcdFont="STANDARD" ledType="FLAT" majorTickMarkColor="silver" majorTickMarkType="PILL" majorTickMarkWidthFactor="1.0" maxMeasuredValue="200.0" maxMeasuredValueVisible="true" maxValue="200.0" mediumTickMarkColor="darkslategray" mediumTickMarkLengthFactor="0.25" mediumTickMarkType="PILL" needleBorderColor="silver" needleColor="silver" prefHeight="250.0" prefWidth="253.0" startAngle="340.0" thresholdColor="silver" tickLabelColor="silver" tickLabelOrientation="ORTHOGONAL" tickMarkColor="silver" tickMarkRingVisible="true" titleColor="silver" unit="Km / h" unitColor="silver" valueColor="silver" />
                 <Gauge fx:id="tachometer" angleRange="270.0" animated="true" backgroundPaint="#0e0e0e00" barBackgroundColor="silver" barBorderColor="silver" barColor="silver" borderPaint="#87676700" borderWidth="0.0" foregroundPaint="#faf1f100" knobType="PLAIN" layoutX="36.0" layoutY="202.0" lcdDesign="GRAY" lcdFont="DIGITAL" majorTickMarkColor="silver" majorTickMarkType="PILL" majorTickMarkWidthFactor="1.0" majorTickSpace="5.0" maxValue="8.0" mediumTickMarkColor="darkslategray" mediumTickMarkLengthFactor="0.25" mediumTickMarkType="PILL" needleBorderColor="silver" needleColor="silver" prefHeight="250.0" prefWidth="253.0" thresholdColor="silver" tickLabelColor="silver" tickLabelOrientation="ORTHOGONAL" tickMarkColor="silver" tickMarkRingVisible="true" titleColor="silver" unit="1/min x 1000" unitColor="silver" valueColor="silver" />
@@ -30,12 +35,72 @@
                 <Button fx:id="left" layoutX="150.0" layoutY="542.0" mnemonicParsing="false" onAction="#leftNavigation" styleClass="computer_nav" stylesheets="@../myCss.css" text="&lt;" />
                 <Button fx:id="right" layoutX="180.0" layoutY="542.0" mnemonicParsing="false" onAction="#rightNavigation" styleClass="computer_nav" stylesheets="@../myCss.css" text="&gt;" />
                 <BorderPane fx:id="computerBG" layoutX="310.0" layoutY="200.0" prefHeight="220.0" prefWidth="180.0" styleClass="comp_display" stylesheets="@../myCss.css"/>
+=======
+                <Polygon fill="#000000" layoutX="108.0" layoutY="127.0" points="502.0, 0.0, 74.8011474609375, 0.0, -62.02471923828125, 97.0, -95.0, 190.0, -62.02472686767578, 277.1000061035156, 74.80116271972656, 379.00006103515625, 525.9752807617188, 379.00006103515625, 647.56640625, 284.3000183105469, 678.0, 190.0, 647.56640625, 97.0" stroke="#5e0303" strokeType="OUTSIDE" strokeWidth="5.0" />
+                <Gauge fx:id="Speedometer" angleRange="300.0" animated="true" backgroundPaint="#0e0e0e00" barBackgroundColor="silver" barBorderColor="silver" barColor="silver" borderPaint="#87676700" borderWidth="0.0" decimals="0" foregroundPaint="#faf1f100" knobType="PLAIN" layoutX="514.0" layoutY="202.0" lcdDesign="GRAY" lcdFont="STANDARD" ledType="FLAT" majorTickMarkColor="silver" majorTickMarkType="PILL" majorTickMarkWidthFactor="1.0" maxMeasuredValue="200.0" maxMeasuredValueVisible="true" maxValue="200.0" mediumTickMarkColor="darkslategray" mediumTickMarkLengthFactor="0.25" mediumTickMarkType="PILL" needleBorderColor="silver" needleColor="silver" prefHeight="250.0" prefWidth="253.0" startAngle="340.0" thresholdColor="silver" tickLabelColor="silver" tickLabelOrientation="ORTHOGONAL" tickMarkColor="silver" tickMarkRingVisible="true" titleColor="silver" unit="Km / h" unitColor="silver" valueColor="silver" />
+                <Gauge fx:id="tachometer" angleRange="270.0" animated="true" backgroundPaint="#0e0e0e00" barBackgroundColor="silver" barBorderColor="silver" barColor="silver" borderPaint="#87676700" borderWidth="0.0" foregroundPaint="#faf1f100" knobType="PLAIN" layoutX="36.0" layoutY="202.0" lcdDesign="GRAY" lcdFont="DIGITAL" majorTickMarkColor="silver" majorTickMarkType="PILL" majorTickMarkWidthFactor="1.0" majorTickSpace="5.0" maxValue="8.0" mediumTickMarkColor="darkslategray" mediumTickMarkLengthFactor="0.25" mediumTickMarkType="PILL" needleBorderColor="silver" needleColor="silver" prefHeight="250.0" prefWidth="253.0" thresholdColor="silver" tickLabelColor="silver" tickLabelOrientation="ORTHOGONAL" tickMarkColor="silver" tickMarkRingVisible="true" titleColor="silver" unit="1/min x 1000" unitColor="silver" valueColor="silver" />
+                <Button fx:id="Gas" layoutX="622.0" layoutY="539.0" mnemonicParsing="false" onAction="#onPressed" text="Pedał gazu" />
+                <Button fx:id="left" layoutX="249.0" layoutY="542.0" mnemonicParsing="false" onAction="#left_navigation" text="&lt;" />
+                <Button fx:id="right" layoutX="277.0" layoutY="542.0" mnemonicParsing="false" onAction="#right_navigation" text="&gt;" />
+                <BorderPane fx:id="comp_bg" layoutX="310.0" layoutY="200.0" prefHeight="220.0" prefWidth="180.0" styleClass="comp_display" stylesheets="@../myCss.css" />
+>>>>>>> 32bdd704077c18eb5a893fdf2d89ebfd35eabd8b
                 <Button fx:id="Brake" layoutX="514.0" layoutY="539.0" mnemonicParsing="false" onAction="#onRelease" text="Pedał hamulca" />
                 <Button fx:id="start" layoutX="712.0" layoutY="516.0" maxHeight="26.0" maxWidth="27.0" mnemonicParsing="false" onAction="#startEngine" prefHeight="26.0" prefWidth="27.0" styleClass="start-button" stylesheets="@../myCss.css" text="Start" textFill="#cfaeae">
                     <font>
                         <Font name="System Bold" size="12.0" />
                     </font>
                 </Button>
+            <ImageView id="check_engine" fx:id="check_engine" fitHeight="47.0" fitWidth="54.0" layoutX="180.0" layoutY="452.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../images/check_engine.jpg" />
+               </image>
+            </ImageView>
+            <ImageView id="acumulator" fx:id="acumulator" fitHeight="47.0" fitWidth="54.0" layoutX="234.0" layoutY="453.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../images/acumulator.jpg" />
+               </image>
+            </ImageView>
+            <ImageView id="reserve" fx:id="reserve" fitHeight="53.0" fitWidth="74.0" layoutX="288.0" layoutY="452.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../images/reserve.jpg" />
+               </image>
+            </ImageView>
+            <ImageView id="airbag" fx:id="airbag" fitHeight="47.0" fitWidth="54.0" layoutX="362.0" layoutY="453.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../images/airbag.jpg" />
+               </image>
+            </ImageView>
+            <ImageView id="oil" fx:id="oil" fitHeight="61.0" fitWidth="94.0" layoutX="400.0" layoutY="441.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../images/oil.jpg" />
+               </image>
+            </ImageView>
+            <ImageView id="coolant" fx:id="coolant" fitHeight="70.0" fitWidth="92.0" layoutX="469.0" layoutY="448.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../images/coolant.jpg" />
+               </image>
+            </ImageView>
+            <ImageView id="abs" fx:id="abs" fitHeight="47.0" fitWidth="54.0" layoutX="546.0" layoutY="453.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../images/ABS.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="leftSignalImage" fitHeight="61.0" fitWidth="74.0" layoutX="214.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../images/left.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="rightSignalImage" fitHeight="61.0" fitWidth="74.0" layoutX="509.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../images/right.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="leftSignal" layoutX="15.0" layoutY="552.0" mnemonicParsing="false" onAction="#flashingLeftSignal" text="LeftSignal" />
+            <Button layoutX="151.0" layoutY="552.0" mnemonicParsing="false" onAction="#flashingRightSignal" text="RightSignal" />
+            <Button layoutX="88.0" layoutY="552.0" mnemonicParsing="false" onAction="#stopFlashing" prefHeight="26.0" prefWidth="52.0" text="Stop" />
+            <Button layoutX="91.0" layoutY="502.0" mnemonicParsing="false" onAction="#flashingEmergencyLights" prefHeight="45.0" prefWidth="46.0" styleClass="button_emergency" stylesheets="@../myCss.css" />
+            <Button layoutX="15.0" layoutY="516.0" mnemonicParsing="false" onAction="#stopFlashingLeft" prefHeight="26.0" prefWidth="68.0" text="StopLeft" />
+            <Button layoutX="150.0" layoutY="517.0" mnemonicParsing="false" onAction="#stopFlashingRight" prefHeight="26.0" prefWidth="77.0" text="StopRight" />
             </children>
         </AnchorPane>
     </children>

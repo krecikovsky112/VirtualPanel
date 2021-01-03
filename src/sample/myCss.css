@@ -25,6 +25,7 @@
     -fx-background-color: #000000;
 }
 
+<<<<<<< HEAD
 .time_temp
 {
     -fx-text-fill: white;
@@ -65,3 +66,10 @@
     -fx-text-decoration: none;
     -fx-text-fill: white;
 }
+=======
+.button_emergency
+{
+    -fx-background-image: url('images/emergencylights.png');
+}
+
+>>>>>>> 32bdd704077c18eb5a893fdf2d89ebfd35eabd8b

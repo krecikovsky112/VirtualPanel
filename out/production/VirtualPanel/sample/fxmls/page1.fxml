@@ -19,6 +19,7 @@
    <center>
       <AnchorPane prefHeight="186.0" prefWidth="144.0" styleClass="page_screen" stylesheets="@../myCss.css" BorderPane.alignment="CENTER">
          <children>
+<<<<<<< HEAD
             <Label layoutX="90.0" layoutY="12.0" style="-fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 14; -fx-font-family: Bahnschrift" text="139.514 km" />
             <Line endX="74.0" layoutX="92.0" layoutY="31.0" startX="-78.5" stroke="#9c0505" />
 
@@ -47,6 +48,10 @@
                   <Font size="18.0" />
                </font>
             </Label>
+=======
+            <Label layoutX="14.0" layoutY="145.0" style="-fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 14;" text="239.5km" />
+            <Label layoutX="155.0" layoutY="145.0" prefHeight="17.0" prefWidth="11.0" style="-fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 14;" text="D" />
+>>>>>>> 32bdd704077c18eb5a893fdf2d89ebfd35eabd8b
          </children></AnchorPane>
    </center>
 </BorderPane>
