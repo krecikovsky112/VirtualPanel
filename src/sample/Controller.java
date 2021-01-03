@@ -23,8 +23,6 @@ import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.scene.text.Text;
 import javafx.util.Duration;
-
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -51,9 +49,6 @@ public class Controller {
     private ImageView rightSignalImage;
 
     @FXML
-    private Button leftSignal;
-
-    @FXML
     private ImageView check_engine;
 
     @FXML
@@ -75,9 +70,6 @@ public class Controller {
     private ImageView abs;
 
     @FXML
-    private TextField display_speed;
-
-    @FXML
     private Timeline loop;
 
     @FXML
@@ -91,6 +83,15 @@ public class Controller {
 
     @FXML
     private BorderPane computerBG;
+
+    @FXML
+    private ToggleButton emergencySignal;
+
+    @FXML
+    private ToggleButton leftSignal;
+
+    @FXML
+    private ToggleButton rightSignal;
 
     int speedValue = 0, flag_engine = 0;
     double tachoValue = 0;
@@ -139,8 +140,7 @@ public class Controller {
         }
     }
 
-    void setVisible()
-    {
+    void setVisible() {
         check_engine.setVisible(true);
         acumulator.setVisible(true);
         reserve.setVisible(true);
@@ -150,8 +150,7 @@ public class Controller {
         abs.setVisible(true);
     }
 
-    void setInvisible()
-    {
+    void setInvisible() {
         check_engine.setVisible(false);
         acumulator.setVisible(false);
         reserve.setVisible(false);
@@ -160,6 +159,7 @@ public class Controller {
         airbag.setVisible(false);
         abs.setVisible(false);
     }
+
     @FXML
     void startEngine() throws IOException, InterruptedException {
         setStatus(1);
@@ -168,9 +168,9 @@ public class Controller {
         tachoValue = 1;
         tachometer.setValue(tachoValue);
         flag_engine = 1;
-//      Media media = new Media("file:///F:/Semestr5/Java/VirtualPanel/src/sample/engine_sound.mp3");
-//      MediaPlayer mediaPlayer=new MediaPlayer(media);
-//      mediaPlayer.setAutoPlay(true);
+//          Media media = new Media("file:///C:/Users/Mati/Desktop/Semestr 5/KCK/Laby/carPanel/VirtualPanel/src/sample/engine_sound.mp3");
+//          MediaPlayer mediaPlayer=new MediaPlayer(media);
+//          mediaPlayer.setAutoPlay(true);
         setVisible();
         new Timeline(new KeyFrame(Duration.millis(4000),actionEvent -> setInvisible())).play();
     }
@@ -217,77 +217,105 @@ public class Controller {
         }
     }
 
-    void setVisibleSignalLeft()
-    {
+    void setVisibleSignalLeft() {
         leftSignalImage.setVisible(true);
-
     }
 
-    void blinkLeft()
-    {
+    void blinkLeft() {
         leftSignalImage.setVisible(false);
-        loop2 =new Timeline(new KeyFrame(Duration.seconds(1),e->setVisibleSignalLeft()));
+        loop2 = new Timeline(new KeyFrame(Duration.seconds(1), e->setVisibleSignalLeft()));
         loop2.play();
     }
 
-    @FXML
-    void flashingLeftSignal()
-    {
-            setVisibleSignalLeft();
-            loop =new Timeline(new KeyFrame(Duration.seconds(2),e->blinkLeft()));
-            loop.setCycleCount(Timeline.INDEFINITE);
-            loop.play();
-    }
-
-    void setVisibleSignalRight()
-    {
+    void setVisibleSignalRight() {
         rightSignalImage.setVisible(true);
-
     }
-    void blinkRight()
-    {
+
+    void blinkRight() {
         rightSignalImage.setVisible(false);
-        loop4 =new Timeline(new KeyFrame(Duration.seconds(1),e->setVisibleSignalRight()));
+        loop4 =new Timeline(new KeyFrame(Duration.seconds(1), e->setVisibleSignalRight()));
         loop4.play();
     }
 
     @FXML
-    void flashingRightSignal()
-    {
+    void flashingLeftSignal() {
+        setVisibleSignalLeft();
+        loop = new Timeline(new KeyFrame(Duration.seconds(2), e->blinkLeft()));
+        loop.setCycleCount(Timeline.INDEFINITE);
+        loop.play();
+    }
+
+//    @FXML
+//    void stopFlashingLeft() {
+//        leftSignalImage.setVisible(false);
+//        loop.stop();
+//        loop2.stop();
+//    }
+
+    @FXML
+    void leftFlashing(){
+        if(leftSignal.isSelected()){
+            flashingLeftSignal();
+        } else {
+            leftSignalImage.setVisible(false);
+            loop.stop();
+            loop2.stop();
+        }
+    }
+
+    @FXML
+    void flashingRightSignal() {
         setVisibleSignalRight();
-        loop3 =new Timeline(new KeyFrame(Duration.seconds(2),e->blinkRight()));
+        loop3 =new Timeline(new KeyFrame(Duration.seconds(2), e->blinkRight()));
         loop3.setCycleCount(Timeline.INDEFINITE);
         loop3.play();
     }
 
-    @FXML
-    void flashingEmergencyLights()
-    {
-        flashingRightSignal();
-        flashingLeftSignal();
-    }
+//    @FXML
+//    void stopFlashingRight() {
+//        rightSignalImage.setVisible(false);
+//        loop3.stop();
+//        loop4.stop();
+//    }
 
     @FXML
-    void stopFlashingLeft()
-    {
-        leftSignalImage.setVisible(false);
-        loop.stop();
+    void rightFlashing(){
+        if(rightSignal.isSelected()){
+            flashingRightSignal();
+        } else {
+            rightSignalImage.setVisible(false);
+            loop3.stop();
+            loop4.stop();
+        }
     }
 
-    @FXML
-    void stopFlashingRight()
-    {
-        rightSignalImage.setVisible(false);
-        loop3.stop();
-    }
+//    @FXML
+//    void flashingEmergencyLights() {
+//        flashingRightSignal();
+//        flashingLeftSignal();
+//    }
+//
+//    @FXML
+//    void stopFlashing() {
+//        rightSignalImage.setVisible(false);
+//        leftSignalImage.setVisible(false);
+//        loop.stop();
+//        loop3.stop();
+//    }
 
     @FXML
-    void stopFlashing()
-    {
-        rightSignalImage.setVisible(false);
-        leftSignalImage.setVisible(false);
-        loop.stop();
-        loop3.stop();
+    void emergencyFlashing() {
+        if(emergencySignal.isSelected()){
+            flashingRightSignal();
+            flashingLeftSignal();
+        } else {
+            rightSignalImage.setVisible(false);
+            leftSignalImage.setVisible(false);
+            loop.stop();
+            loop2.stop();
+            loop3.stop();
+            loop4.stop();
+        }
     }
 
     private void loadPage(String page) throws IOException {
