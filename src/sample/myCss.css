@@ -1,3 +1,10 @@
+.paneBackground
+{
+    -fx-background-image: url("images/car_panel.jpg");
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center;
+}
+
 .start-button
 {
     -fx-background-radius: 5em ;
@@ -69,4 +76,52 @@
 .button_emergency
 {
     -fx-background-image: url('images/emergencylights.png');
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center;
+    -fx-border-radius: 15px;
+}
+
+.button_emergency:selected
+{
+    -fx-background-image: url('images/emergencylights2.png');
+}
+
+.button_left
+{
+    -fx-background-image: url('images/left_icon.png');
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center;
+    -fx-border-radius: 15px;
+}
+
+.button_right
+{
+    -fx-background-image: url('images/right_icon.png');
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center;
+    -fx-border-radius: 15px;
+}
+
+.button_left:selected
+{
+    -fx-background-image: url('images/left_icon2.png');
+}
+
+.button_right:selected
+{
+    -fx-background-image: url('images/right_icon2.png');
+}
+
+.gas
+{
+    -fx-background-image: url('images/gas_pedal.jpg');
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center;
+}
+
+.brake
+{
+    -fx-background-image: url('images/brake_pedal.png');
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center;
 }
