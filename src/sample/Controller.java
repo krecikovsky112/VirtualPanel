@@ -288,6 +288,7 @@ public class Controller {
         loop.stop();
         loop3.stop();
     }
+    
     private void loadPage(String page) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource(page + ".fxml"));
         comp_bg.setCenter(root);

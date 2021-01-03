@@ -83,7 +83,7 @@
             <Button fx:id="leftSignal" layoutX="15.0" layoutY="552.0" mnemonicParsing="false" onAction="#flashingLeftSignal" text="LeftSignal" />
             <Button layoutX="151.0" layoutY="552.0" mnemonicParsing="false" onAction="#flashingRightSignal" text="RightSignal" />
             <Button layoutX="88.0" layoutY="552.0" mnemonicParsing="false" onAction="#stopFlashing" prefHeight="26.0" prefWidth="52.0" text="Stop" />
-            <Button layoutX="91.0" layoutY="502.0" mnemonicParsing="false" onAction="#flashingEmergencyLights" prefHeight="45.0" prefWidth="46.0" styleClass="button_emergency" stylesheets="@../myCss.css" />
+            <Button alignment="CENTER" layoutX="91.0" layoutY="502.0" mnemonicParsing="false" onAction="#flashingEmergencyLights" prefHeight="45.0" prefWidth="46.0" styleClass="button_emergency" stylesheets="@../myCss.css" />
             <Button layoutX="15.0" layoutY="516.0" mnemonicParsing="false" onAction="#stopFlashingLeft" prefHeight="26.0" prefWidth="68.0" text="StopLeft" />
             <Button layoutX="150.0" layoutY="517.0" mnemonicParsing="false" onAction="#stopFlashingRight" prefHeight="26.0" prefWidth="77.0" text="StopRight" />
             </children>
