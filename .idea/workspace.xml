@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4aa3ea0a-be2f-4c14-b007-6e2bff8b6a83" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/google-java-format.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/google-java-format.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Medusa_11_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/javafx_media_16_ea_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VirtualPanel/sample/fxmls/page1.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VirtualPanel/sample/fxmls/page1.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VirtualPanel/sample/fxmls/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VirtualPanel/sample/fxmls/sample.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VirtualPanel/sample/images/emergencylights.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VirtualPanel/sample/images/emergencylights.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VirtualPanel/sample/images/kontrolka-kierunkowskazow.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VirtualPanel/sample/myCss.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VirtualPanel/sample/myCss.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/images/emergencylights.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/images/emergencylights.png" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.2.3\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1mXQl9h2NZiz5rYjqfWtWL0M1Y4" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../javafx-media-16-ea+5.jar" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.29655173" />
+  </component>
+  <component name="RunManager">
+    <configuration name="VirtualPanel" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="sample.Main" />
+      <module name="VirtualPanel" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4aa3ea0a-be2f-4c14-b007-6e2bff8b6a83" name="Default Changelist" comment="" />
+      <created>1609637609079</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1609637609079</updated>
+      <workItem from="1609637612973" duration="1354000" />
+      <workItem from="1609673169031" duration="623000" />
+      <workItem from="1609673939823" duration="13976000" />
+      <workItem from="1609697296657" duration="294000" />
+    </task>
+    <task id="LOCAL-00001" summary="Change display page and page1 fxml files in computerBG in Controller">
+      <created>1609638930604</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1609638930604</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add VirtualPanel.iml file again.">
+      <created>1609697412037</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1609697412037</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Main scene Sample.fxml view changes.">
+      <created>1609697497348</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1609697497348</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Set CSS style for main scene buttons.">
+      <created>1609697521118</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1609697521118</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Change display page and page1 fxml files in computerBG in Controller" />
+    <MESSAGE value="Add VirtualPanel.iml file again." />
+    <MESSAGE value="Main scene Sample.fxml view changes." />
+    <MESSAGE value="Set CSS style for main scene buttons." />
+    <option name="LAST_COMMIT_MESSAGE" value="Set CSS style for main scene buttons." />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="414" y="180" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1609638211844">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="414" y="180" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050/1920.54.1280.994@0.0.1920.1050" timestamp="1609638211844" />
+    <state x="694" y="327" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1609638185044">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="694" y="327" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1050/1920.54.1280.994@0.0.1920.1050" timestamp="1609638185044" />
+    <state x="689" y="327" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1609638207354">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="689" y="327" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1050/1920.54.1280.994@0.0.1920.1050" timestamp="1609638207354" />
+    <state x="690" y="279" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1609637658068">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="690" y="279" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1920.1050/1920.54.1280.994@0.0.1920.1050" timestamp="1609637658068" />
+    <state x="698" y="341" width="588" height="531" key="FileChooserDialogImpl" timestamp="1609684616725">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="698" y="341" width="588" height="531" key="FileChooserDialogImpl/0.0.1920.1050/1920.54.1280.994@0.0.1920.1050" timestamp="1609684616725" />
+    <state width="1877" height="195" key="GridCell.Tab.0.bottom" timestamp="1609690498135">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="195" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.54.1280.994@0.0.1920.1050" timestamp="1609690498135" />
+    <state width="1877" height="195" key="GridCell.Tab.0.center" timestamp="1609690498135">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="195" key="GridCell.Tab.0.center/0.0.1920.1050/1920.54.1280.994@0.0.1920.1050" timestamp="1609690498135" />
+    <state width="1877" height="195" key="GridCell.Tab.0.left" timestamp="1609690498135">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="195" key="GridCell.Tab.0.left/0.0.1920.1050/1920.54.1280.994@0.0.1920.1050" timestamp="1609690498135" />
+    <state width="1877" height="195" key="GridCell.Tab.0.right" timestamp="1609690498135">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="195" key="GridCell.Tab.0.right/0.0.1920.1050/1920.54.1280.994@0.0.1920.1050" timestamp="1609690498135" />
+    <state x="560" y="165" width="1040" height="788" key="SettingsEditor" timestamp="1609684627986">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="560" y="165" width="1040" height="788" key="SettingsEditor/0.0.1920.1050/1920.54.1280.994@0.0.1920.1050" timestamp="1609684627986" />
+    <state x="807" y="438" key="VCS.ChangelistChooser" timestamp="1609684983499">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="807" y="438" key="VCS.ChangelistChooser/0.0.1920.1050/1920.54.1280.994@0.0.1920.1050" timestamp="1609684983499" />
+    <state x="552" y="245" key="Vcs.Push.Dialog.v2" timestamp="1609638936343">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="552" y="245" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1920.54.1280.994@0.0.1920.1050" timestamp="1609638936343" />
+  </component>
+</project>
