@@ -19,7 +19,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4aa3ea0a-be2f-4c14-b007-6e2bff8b6a83" name="Default Changelist" comment="" />
+    <list default="true" id="4aa3ea0a-be2f-4c14-b007-6e2bff8b6a83" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Medusa_11_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/javafx_media_16_ea_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VirtualPanel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/VirtualPanel.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Controller.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,8 +55,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../javafx-media-16-ea+5.jar" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.29655173" />
   </component>
@@ -56,19 +64,6 @@
     <configuration name="VirtualPanel" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="sample.Main" />
       <module name="VirtualPanel" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -86,6 +81,13 @@
       <workItem from="1609673169031" duration="623000" />
       <workItem from="1609673939823" duration="13976000" />
       <workItem from="1609697296657" duration="688000" />
+      <workItem from="1609756052930" duration="942000" />
+      <workItem from="1609758235936" duration="698000" />
+      <workItem from="1609760880711" duration="202000" />
+      <workItem from="1609768763243" duration="768000" />
+      <workItem from="1609769804017" duration="1187000" />
+      <workItem from="1609838035864" duration="696000" />
+      <workItem from="1609844172839" duration="954000" />
     </task>
     <task id="LOCAL-00001" summary="Change display page and page1 fxml files in computerBG in Controller">
       <created>1609638930604</created>
@@ -188,29 +190,35 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="690" y="279" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1920.1050/1920.54.1280.994@0.0.1920.1050" timestamp="1609637658068" />
-    <state x="698" y="341" width="588" height="531" key="FileChooserDialogImpl" timestamp="1609684616725">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state x="558" y="268" width="590" height="417" key="FileChooserDialogImpl" timestamp="1609760896967">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="558" y="268" width="590" height="417" key="FileChooserDialogImpl/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1609760896967" />
     <state x="698" y="341" width="588" height="531" key="FileChooserDialogImpl/0.0.1920.1050/1920.54.1280.994@0.0.1920.1050" timestamp="1609684616725" />
-    <state width="1877" height="195" key="GridCell.Tab.0.bottom" timestamp="1609690498135">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state width="1493" height="205" key="GridCell.Tab.0.bottom" timestamp="1609845133561">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="205" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1609845133561" />
     <state width="1877" height="195" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.54.1280.994@0.0.1920.1050" timestamp="1609690498135" />
-    <state width="1877" height="195" key="GridCell.Tab.0.center" timestamp="1609690498135">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state width="1493" height="205" key="GridCell.Tab.0.center" timestamp="1609845133546">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="205" key="GridCell.Tab.0.center/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1609845133546" />
     <state width="1877" height="195" key="GridCell.Tab.0.center/0.0.1920.1050/1920.54.1280.994@0.0.1920.1050" timestamp="1609690498135" />
-    <state width="1877" height="195" key="GridCell.Tab.0.left" timestamp="1609690498135">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state width="1493" height="205" key="GridCell.Tab.0.left" timestamp="1609845133546">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="205" key="GridCell.Tab.0.left/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1609845133546" />
     <state width="1877" height="195" key="GridCell.Tab.0.left/0.0.1920.1050/1920.54.1280.994@0.0.1920.1050" timestamp="1609690498135" />
-    <state width="1877" height="195" key="GridCell.Tab.0.right" timestamp="1609690498135">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state width="1493" height="205" key="GridCell.Tab.0.right" timestamp="1609845133546">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="205" key="GridCell.Tab.0.right/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1609845133546" />
     <state width="1877" height="195" key="GridCell.Tab.0.right/0.0.1920.1050/1920.54.1280.994@0.0.1920.1050" timestamp="1609690498135" />
-    <state x="560" y="165" width="1040" height="788" key="SettingsEditor" timestamp="1609684627986">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state x="448" y="0" width="1040" height="788" key="SettingsEditor" timestamp="1609770584325">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="448" y="0" key="SettingsEditor/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1609770584325" />
     <state x="560" y="165" width="1040" height="788" key="SettingsEditor/0.0.1920.1050/1920.54.1280.994@0.0.1920.1050" timestamp="1609684627986" />
     <state x="807" y="438" key="VCS.ChangelistChooser" timestamp="1609684983499">
       <screen x="0" y="0" width="1920" height="1050" />

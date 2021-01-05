@@ -3,33 +3,19 @@ package sample;
 import eu.hansolo.medusa.Gauge;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
-import javafx.animation.TranslateTransition;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.ListView;
-import javafx.scene.control.TextArea;
-import javafx.scene.control.*;
-import javafx.scene.image.Image;
+import javafx.scene.control.*;;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
-import javafx.scene.text.Text;
 import javafx.util.Duration;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.ResourceBundle;
 
 public class Controller {
 
@@ -115,8 +101,7 @@ public class Controller {
                 tachoValue = 8;
             }
             tachometer.setValue(tachoValue);
-            if(getStatus() == 1){
-                //setStatus(1);
+            if (getStatus() == 1) {
                 loadPage("page1");
             }
         }
@@ -168,27 +153,28 @@ public class Controller {
         tachoValue = 1;
         tachometer.setValue(tachoValue);
         flag_engine = 1;
-//          Media media = new Media("file:///C:/Users/Mati/Desktop/Semestr 5/KCK/Laby/carPanel/VirtualPanel/src/sample/engine_sound.mp3");
-//          MediaPlayer mediaPlayer=new MediaPlayer(media);
-//          mediaPlayer.setAutoPlay(true);
+        URL url = getClass().getResource("engine_sound.mp3");
+        Media media = new Media(url.toString());
+        MediaPlayer mediaPlayer = new MediaPlayer(media);
+        mediaPlayer.setAutoPlay(true);
         setVisible();
-        new Timeline(new KeyFrame(Duration.millis(4000),actionEvent -> setInvisible())).play();
+        new Timeline(new KeyFrame(Duration.millis(4000), actionEvent -> setInvisible())).play();
     }
 
     @FXML
     void rightNavigation(ActionEvent event) throws IOException {
-        if(getStatus() == 0 || getStatus() == 1) {
+        if (getStatus() == 0 || getStatus() == 1) {
             setStatus(2);
             loadPage("page2");
-        } else if(getStatus() == 2){
+        } else if (getStatus() == 2) {
             setStatus(3);
             loadPage("page3");
-        } else if(getStatus() == 3){
+        } else if (getStatus() == 3) {
             setStatus(4);
             loadPage("page4");
-        } else if(getStatus() == 4){
+        } else if (getStatus() == 4) {
             setStatus(1);
-            if(speedValue > 0){
+            if (speedValue > 0) {
                 loadPage("page1");
             } else {
                 loadPage("page");
@@ -198,20 +184,20 @@ public class Controller {
 
     @FXML
     void leftNavigation(ActionEvent event) throws IOException {
-        if(getStatus() == 4){
+        if (getStatus() == 4) {
             setStatus(3);
             loadPage("page3");
-        } else if(getStatus() == 3) {
+        } else if (getStatus() == 3) {
             setStatus(2);
             loadPage("page2");
-        } else if(getStatus() == 2){
+        } else if (getStatus() == 2) {
             setStatus(1);
-            if(speedValue > 0){
+            if (speedValue > 0) {
                 loadPage("page1");
             } else {
                 loadPage("page");
             }
-        } else if(getStatus() == 1 || getStatus() == 0){
+        } else if (getStatus() == 1 || getStatus() == 0) {
             setStatus(4);
             loadPage("page4");
         }
@@ -223,7 +209,7 @@ public class Controller {
 
     void blinkLeft() {
         leftSignalImage.setVisible(false);
-        loop2 = new Timeline(new KeyFrame(Duration.seconds(1), e->setVisibleSignalLeft()));
+        loop2 = new Timeline(new KeyFrame(Duration.seconds(1), e -> setVisibleSignalLeft()));
         loop2.play();
     }
 
@@ -233,28 +219,21 @@ public class Controller {
 
     void blinkRight() {
         rightSignalImage.setVisible(false);
-        loop4 =new Timeline(new KeyFrame(Duration.seconds(1), e->setVisibleSignalRight()));
+        loop4 = new Timeline(new KeyFrame(Duration.seconds(1), e -> setVisibleSignalRight()));
         loop4.play();
     }
 
     @FXML
     void flashingLeftSignal() {
         setVisibleSignalLeft();
-        loop = new Timeline(new KeyFrame(Duration.seconds(2), e->blinkLeft()));
+        loop = new Timeline(new KeyFrame(Duration.seconds(2), e -> blinkLeft()));
         loop.setCycleCount(Timeline.INDEFINITE);
         loop.play();
     }
 
-//    @FXML
-//    void stopFlashingLeft() {
-//        leftSignalImage.setVisible(false);
-//        loop.stop();
-//        loop2.stop();
-//    }
-
     @FXML
-    void leftFlashing(){
-        if(leftSignal.isSelected()){
+    void leftFlashing() {
+        if (leftSignal.isSelected()) {
             flashingLeftSignal();
         } else {
             leftSignalImage.setVisible(false);
@@ -266,21 +245,14 @@ public class Controller {
     @FXML
     void flashingRightSignal() {
         setVisibleSignalRight();
-        loop3 =new Timeline(new KeyFrame(Duration.seconds(2), e->blinkRight()));
+        loop3 = new Timeline(new KeyFrame(Duration.seconds(2), e -> blinkRight()));
         loop3.setCycleCount(Timeline.INDEFINITE);
         loop3.play();
     }
 
-//    @FXML
-//    void stopFlashingRight() {
-//        rightSignalImage.setVisible(false);
-//        loop3.stop();
-//        loop4.stop();
-//    }
-
     @FXML
-    void rightFlashing(){
-        if(rightSignal.isSelected()){
+    void rightFlashing() {
+        if (rightSignal.isSelected()) {
             flashingRightSignal();
         } else {
             rightSignalImage.setVisible(false);
@@ -289,23 +261,9 @@ public class Controller {
         }
     }
 
-//    @FXML
-//    void flashingEmergencyLights() {
-//        flashingRightSignal();
-//        flashingLeftSignal();
-//    }
-//
-//    @FXML
-//    void stopFlashing() {
-//        rightSignalImage.setVisible(false);
-//        leftSignalImage.setVisible(false);
-//        loop.stop();
-//        loop3.stop();
-//    }
-
     @FXML
     void emergencyFlashing() {
-        if(emergencySignal.isSelected()){
+        if (emergencySignal.isSelected()) {
             flashingRightSignal();
             flashingLeftSignal();
         } else {
@@ -323,11 +281,11 @@ public class Controller {
         computerBG.setCenter(root);
     }
 
-    private void setStatus(int status){
+    private void setStatus(int status) {
         this.status = status;
     }
 
-    private int getStatus(){
+    private int getStatus() {
         return status;
     }
 }
